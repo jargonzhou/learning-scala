@@ -5,7 +5,9 @@
 >
 > Coursier is the Scala application and artifact manager. It can install Scala applications and setup your Scala development environment. It can also download and cache artifacts from the web.
 
-applications:
+# Application
+* https://github.com/coursier/apps
+
 - `cs` itself, to further manage your Scala environment
 - `scala-cli`, a convenient tool to compile / run / package Scala code
 - `scala`, the Scala REPL
@@ -33,6 +35,8 @@ It currently ensures that:
 
 ```shell
 $ cs setup
+$ cs version
+2.1.25-M17
 
 # list
 $ cs list
@@ -52,7 +56,7 @@ Scala version (default): 3.7.3
 
 $ amm --version
 Ammonite REPL & Script-Runner, 3.0.0-M1
-$  amm.bat
+$ amm.bat
 Loading...
 Welcome to the Ammonite Repl 3.0.0-M1 (Scala 2.13.13 Java 17.0.9)
 
@@ -68,20 +72,30 @@ CPU architecture: amd64
 * https://get-coursier.io/docs/cli-install
 
 ```shell
+# Scala 2.12
 $ cs install scala:2.12.20 scalac:2.12.20
 $ scala -version
 Scala code runner version 2.12.20 -- Copyright 2002-2024, LAMP/EPFL and Lightbend, Inc.
 
+# Scala 2.13
 $ cs install scala:2.13.16 scalac:2.13.16
 $ scala -version
 Scala code runner version 2.13.16 -- Copyright 2002-2025, LAMP/EPFL and Lightbend, Inc. dba Akka
 
+# Scala 3
 $ cs install scala:3.7.3 scalac:3.7.3
 $ scala -version
 Scala code runner version: 1.9.0
 Scala version (default): 3.7.3
 
+# ammonite
 $ cs install ammonite:3.0.3
+
+# scalap
+$ cs install scalap
+Wrote scalap
+$ scalap -version
+Scala classfile decoder version 2.0.1 -- (c) 2002-2025 LAMP/EPFL
 
 # uninstall
 cs uninstall scala scalac

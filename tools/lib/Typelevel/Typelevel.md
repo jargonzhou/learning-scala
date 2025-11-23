@@ -7,6 +7,8 @@
 
 # Projects
 * [Cats](./Cats.md): a library which provides abstractions for functional programming in the Scala programming language.
+* [Cats Effect](https://github.com/typelevel/cats-effect): The pure asynchronous runtime for Scala.
+* [FS2](https://github.com/typelevel/fs2): Compositional, streaming I/O library for Scala.
 * [ScalaCheck](./ScalaCheck.md): Property-based testing for Scala
 * ...
 

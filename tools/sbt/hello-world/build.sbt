@@ -77,7 +77,8 @@ libraryDependencies += scalaParserCombinators
 // To learn more about multi-project builds, head over to the official sbt
 // documentation at http://www.scala-sbt.org/documentation.html
 
-val toolkitTest = "org.scala-lang" %% "toolkit-test" % "0.1.7"
+// https://mvnrepository.com/artifact/org.scala-lang/toolkit-test
+val toolkitTest = "org.scala-lang" %% "toolkit-test" % "0.7.0"
 
 // Custom settings and tasks
 val startServer = taskKey[Unit]("start server")

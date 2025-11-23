@@ -36,3 +36,10 @@ starting...
 sum: 3
 stopping...
 ```
+
+# MUnit
+- [MyTests.scala](./src/test/scala/MyTests.scala): assertion
+- [MathSuite.scala](./src/test/scala/MathSuite.scala): suite
+- [AsyncMathLibTests.scala](./src/test/scala/AsyncMathLibTests.scala): asynchronous test
+- [TaskSuite.scala](./src/test/scala/TaskSuite.scala): custom handling for asynchronous types beside `Future[T]`
+- [FileTests.scala](./src/test/scala/FileTests.scala): fixtures

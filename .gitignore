@@ -6,9 +6,15 @@ hs_err_pid*
 
 .ipynb_checkpoints
 
+.vscode
 .bsp
 .metals
 .bloop
 .scala-build
 metals.sbt
 **/project/project/
+target
+
+
+
+books/bak

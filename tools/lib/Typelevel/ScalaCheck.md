@@ -11,3 +11,7 @@
 >
 > ScalaCheck is used by several prominent Scala projects, for example the *Scala compiler* and the *Akka* concurrency framework.
 
+```scala
+org.scalacheck.Properties
+org.scalacheck.Prop.forAll
+```

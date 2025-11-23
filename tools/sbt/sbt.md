@@ -1,6 +1,9 @@
 # sbt
 * https://www.scala-sbt.org/
 * https://github.com/sbt/sbt
+* [Getting Started with Scala and sbt on the Command Line](https://docs.scala-lang.org/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html)
+* [Scala 3 — Book - Building and Testing Scala Projects with sbt](https://docs.scala-lang.org/scala3/book/tools-sbt.html)
+* [Scala 3 Migration Guide - Porting an sbt Project (by hand)](https://docs.scala-lang.org/scala3/guides/migration/tutorial-sbt.html)
 
 > sbt: A simple build tool
 
@@ -17,8 +20,13 @@ Features of sbt
 * External project support (list a git repository as a dependency!)
 * **Parallel task execution**, including parallel test execution
 
+actions
+- [hello-world](./hello-world/README.md)
+- [hello-world-auto-plugin](./hello-world-auto-plugin/README.md)
+
 # Skaffold
 * [Getting Started with Scala and sbt on the Command Line](https://docs.scala-lang.org/getting-started/sbt-track/getting-started-with-scala-and-sbt-on-the-command-line.html)
+* https://www.scala-sbt.org/1.x/docs/Using-sbt.html
 
 ```shell
 $ sbt new
@@ -883,7 +891,19 @@ watchPersistFileStamps
 watchAntiEntropy
 ```
 
-# SBT Native Packager
+# Configuration
+* https://www.scala-sbt.org/1.x/docs/Configuration-Index.html
+
+# Dependency Management
+* https://www.scala-sbt.org/1.x/docs/Dependency-Management-Index.html
+
+# Tasks and Commands
+* https://www.scala-sbt.org/1.x/docs/Tasks-and-Commands.html
+
+# Plugins
+* https://www.scala-sbt.org/1.x/docs/Plugins-and-Best-Practices.html
+
+## SBT Native Packager
 * https://www.scala-sbt.org/sbt-native-packager/
 * https://github.com/sbt/sbt-native-packager
 
@@ -905,7 +925,7 @@ Hello sbt!
 The current temperature in New York is 15.9 C.
 ```
 
-## packages
+### packages
 We can generate other packages via the following tasks. Note that each packaging format may needs some additional configuration and native tools available. Here’s a complete list of current formats.
 
 - Universal/packageBin - Generates a universal zip file
@@ -915,6 +935,26 @@ We can generate other packages via the following tasks. Note that each packaging
 - Rpm/packageBin - Generates an rpm
 - Universal/packageOsxDmg - Generates a DMG file with the same contents as the universal zip/tgz.
 - Windows/packageBin - Generates an MSI
+
+## sbt-tpolecat
+* https://github.com/typelevel/sbt-tpolecat
+
+> scalac options for the enlightened
+>
+> sbt-tpolecat is an SBT plugin for automagically configuring scalac options according to the project Scala version, inspired by Rob Norris ([@tpolecat](https://github.com/tpolecat))'s excellent series of blog posts providing [recommended options](https://tpolecat.github.io/2017/04/25/scalac-flags.html) to get the most out of the compiler.
+>
+> As of version 0.1.11, it also supports setting options for Scala 3.x.
+
+# Detailed Topics
+
+## Cross-building
+* https://www.scala-sbt.org/1.x/docs/Cross-Build.html
+* [Cross building plugins](https://www.scala-sbt.org/1.x/docs/Cross-Build-Plugins.html)
+
+Define the versions of Scala to build against in the `crossScalaVersions` setting. Versions of Scala 2.10.2 or later are allowed.
+
+# How to...
+* https://www.scala-sbt.org/1.x/docs/Howto.html
 
 # See Also
 * [The essential Scala build tool tutorial](https://www.scalawilliam.com/essential-sbt/)

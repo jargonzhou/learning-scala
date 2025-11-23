@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scala.js and Vite App</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="click-me-button-div">
+    <button id="click-me-button" type="button" onclick="import('/main.js').then(Module => Module.addClickedMessage())"> <!-- before loading main.js -->
+      Click me!
+    </button>
+  </div>
+  
+  <script type="module" src="/main.js">
+  </script>
+
+  <!-- test usage exports by Scala.js-->
+  <!-- <script type="module">
+    import {addClickedMessage} from '/main.js'
+    addClickedMessage()
+  </script> -->
+</body>
+
+</html>

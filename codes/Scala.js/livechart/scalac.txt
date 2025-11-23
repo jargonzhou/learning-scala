@@ -1,0 +1,145 @@
+Usage: scalac <options> <source files>
+where possible standard options include:
+          -D<property=value>  Pass -D<property=value> directly to the runtime
+                              system.
+                    -J<flag>  Pass -J<flag> directly to the runtime system.
+                          -P  Pass an option to a plugin, e.g. -P:<plugin>:<opt>
+                          -V  Print a synopsis of verbose options.
+                          -W  Print a synopsis of warning options.
+                      -Wconf  Configure compiler warnings.
+                     -Werror  Fail the compilation if there are any warnings.
+                          -X  Print a synopsis of advanced options.
+                          -Y  Print a synopsis of private options.
+              -bootclasspath  Override location of bootstrap class files.
+                  -classpath  Specify where to find user class files.
+                              Default .
+                      -color  Colored output
+                              Default always
+                              Choices : always, never
+-coverage-exclude-classlikes  List of regexes for packages, classes and modules
+                              to exclude from coverage.
+     -coverage-exclude-files  List of regexes for files to exclude from
+                              coverage.
+               -coverage-out  Destination for coverage classfiles and
+                              instrumentation data.
+                          -d  Destination for generated classfiles.
+                -deprecation  Emit warning and location for usages of deprecated
+                              APIs.
+                   -encoding  Specify character encoding used by source files.
+                              Default UTF-8
+               -experimental  Annotate all top-level definitions with
+                              @experimental. This enables the use of
+                              experimental features anywhere in the project.
+                    -explain  Explain errors in more detail.
+             -explain-cyclic  Explain cyclic reference errors in more detail.
+              -explain-types  Explain type errors in more detail (deprecated,
+                              use -explain instead).
+                    -extdirs  Override location of installed extensions.
+                    -feature  Emit warning and location for usages of features
+                              that should be imported explicitly.
+                 -from-tasty  Compile classes from tasty files. The arguments
+                              are .tasty or .jar files.
+                       -help  Print a synopsis of standard options.
+                     -indent  Together with -rewrite, remove {...} syntax when
+                              possible due to significant indentation.
+        -java-output-version  Compile code with classes specific to the given
+                              version of the Java platform available on the
+                              classpath and emit bytecode for this version.
+                              Corresponds to -release flag in javac.
+                              Choices : 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
+          -javabootclasspath  Override java boot classpath.
+                -javaextdirs  Override java extdirs classpath.
+                   -language  Enable one or more language features.
+                              Choices : 
+                              - help :
+                              	Display all available features, 
+                              - noAutoTupling :
+                              	Disable automatic tupling, 
+                              - dynamics :
+                              	Allow direct or indirect subclasses of
+                              scala.Dynamic,
+                              - unsafeNulls :
+                              	Enable unsafe nulls for explicit nulls, 
+                              - postfixOps :
+                              	Allow postfix operators (not recommended), 
+                              - strictEquality :
+                              	Enable strict equality (disable canEqualAny), 
+                              - implicitConversions :
+                              	Allow implicit conversions without warnings, 
+                              - adhocExtensions :
+                              	Allow ad-hoc extension methods, 
+                              - experimental.namedTypeArguments :
+                              	Allow named type arguments, 
+                              - experimental.genericNumberLiterals :
+                              	Allow generic number literals, 
+                              - experimental.macros :
+                              	Allow Scala 2 macros, 
+                              - experimental.dependent :
+                              	Allow dependent method types, 
+                              - experimental.erasedDefinitions :
+                              	Allow erased definitions, 
+                              - deprecated.symbolLiterals :
+                              	Allow symbol literals, 
+                              - experimental.saferExceptions :
+                              	Enable safer exceptions, 
+                              - experimental.pureFunctions :
+                              	Enable pure functions for capture checking, 
+                              - experimental.captureChecking :
+                              	Enable experimental capture checking, 
+                              - experimental.separationChecking :
+                              	Enable experimental separation checking (requires
+                              captureChecking),
+                              - experimental.into :
+                              	Allow into modifier on parameter types, 
+                              - experimental.modularity :
+                              	Enable experimental modularity features, 
+                              - experimental.packageObjectValues :
+                              	Enable experimental package objects as values
+                 -new-syntax  Require `then` and `do` in control expressions.
+                  -no-indent  Require classical {...} syntax, indentation is not
+                              significant.
+                     -nowarn  Silence all warnings.
+                 -old-syntax  Require `(...)` around conditions.
+                  -pagewidth  Set page width
+                              Default 80
+                    -preview  Enable the use of preview features anywhere in the
+                              project.
+                -print-lines  Show source code line numbers.
+                -print-tasty  Prints the raw tasty.
+                -project-url  The source repository of your project.
+           -repl-init-script  The code will be run on REPL startup.
+       -repl-quit-after-init  Quit REPL after evaluating the init script.
+                    -rewrite  When used in conjunction with a `...-migration`
+                              source version, rewrites sources to migrate to new
+                              version.
+                    -scalajs  Compile in Scala.js mode (requires
+                              scalajs-library.jar on the classpath).
+-scalajs-genStaticForwardersForNonTopLevelObjects
+                              Generate static forwarders even for non-top-level
+                              objects (Scala.js only).
+       -scalajs-mapSourceURI  rebases source URIs from uri1 to uri2 (or to a
+                              relative URI) for source maps (Scala.js only).
+          -semanticdb-target  Specify an alternative output directory for
+                              SemanticDB files.
+            -semanticdb-text  Specifies whether to include source code in
+                              SemanticDB files or not.
+                     -source  source version
+                              Default 3.7
+                              Choices : 3.0-migration, 3.0, 3.1, 3.2-migration,
+                              3.2, 3.3-migration, 3.3, 3.4-migration, 3.4,
+                              3.5-migration, 3.5, 3.6-migration, 3.6,
+                              3.7-migration, 3.7, 3.8-migration, 3.8,
+                              future-migration, future
+                 -sourcepath  Specify location(s) of source files.
+                 -sourceroot  Specify workspace root directory.
+                              Default .
+                  -unchecked  Enable additional warnings where generated code
+                              depends on assumptions.
+                     -uniqid  Uniquely tag all identifiers in debugging output.
+                  -usejavacp  Utilize the java.class.path in classpath
+                              resolution.
+                    -verbose  Output messages about what the compiler is doing.
+                    -version  Print product version and exit.
+                     @<file>  A text file containing compiler arguments (options
+                              and source files).
+
