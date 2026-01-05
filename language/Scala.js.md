@@ -86,6 +86,13 @@ import scala.scalajs.js.annotation.{JSImport, JSExportTopLevel, JSExport}
 # Libraries
 ## JavaScript facades
 Interact with JavaScript libraries in a safe, strongly-typed manner.
+- Common JS libraries
+- UI frameworks
+- Other libraries
+
+**ScalablyTyped** have more open source Scala.js facades for some of your favorite JavaScript libraries, derived from DefinitelyTyped’s TypeScript definitions.
+
+If you didn’t find a facade for the library you’d like to use, it’s quite easy to do one yourself. Check out the [facade documentation](https://www.scala-js.org/doc/interoperability/facade-types.html) and the [TypeScript conversion tool](https://github.com/sjrd/scala-js-ts-importer). You can also skip whole facade-business and just [call JavaScript APIs dynamically](https://www.scala-js.org/doc/interoperability/facade-types.html#calling-javascript-from-scalajs-with-dynamic-types), without type-checking, the same way you do it when programming in JavaScript itself.
 
 ## Scala libraries
 Libraries traditionally running on the JVM, now running on JS as well!
@@ -120,7 +127,7 @@ Get started quickly.
       * **Circe** for JSON
       * **Log4Cats** for purely-functional logging
       * **ScalaTest** with TestContainers wrapped in Cats Effect
-
+* [Binding.scala](https://github.com/ThoughtWorksInc/Binding.scala): Binding.scala is a data-binding library for Scala, running on both JVM and Scala.js.
 
 ## Tools
 - Vite: Next Generation Frontend Tooling

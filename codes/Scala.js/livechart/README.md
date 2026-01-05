@@ -2,6 +2,7 @@
 * https://www.scala-js.org/doc/tutorial/scalajs-vite.html
 * https://www.scala-js.org/doc/tutorial/basic/
 * https://www.scala-js.org/doc/tutorial/laminar.html
+* https://www.scala-js.org/doc/tutorial/scalablytyped.html
 
 ----------------
 
