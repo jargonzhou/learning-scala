@@ -1,5 +1,6 @@
 # Coursier
 * https://get-coursier.io/
+* https://github.com/coursier/coursier
 
 > Pure Scala Artifact Fetching
 >
@@ -8,13 +9,13 @@
 # Application
 * https://github.com/coursier/apps
 
-- `cs` itself, to further manage your Scala environment
-- `scala-cli`, a convenient tool to compile / run / package Scala code
+- `cs` itself, to further manage your Scala environment/管理Scala环境
+- `scala-cli`, a convenient tool to compile / run / package Scala code/编译/运行/打包Scala代码
 - `scala`, the Scala REPL
-- `scalac`, the Scala compiler
-- `sbt` and `sbtn`, the sbt build toold
-- `ammonite`, an enhanced REPL for Scala
-- `scalafmt`, the Scala code formatter
+- `scalac`, the Scala compiler/Scala编译器
+- `sbt` and `sbtn`, the sbt build toold/sbt构建工具
+- `ammonite`, an enhanced REPL for Scala/增强的Scala REPL
+- `scalafmt`, the Scala code formatter/Scala代码格式化器
 
 # CLI
 * https://get-coursier.io/docs/cli-overview
@@ -24,6 +25,26 @@
 - manage the installed JVMs: `java`, `java-home`
 - directly manipulate Maven dependencies: `fetch`, `resolve`
 - perform `setup` again
+
+Commands
+- setup: 安装Scala开发环境
+- install, list, update, uninstall, search: 管理安装的Scala应用
+    - install: 在安装目录中安装应用
+    - list: 查看已安装的应用
+    - update: 更新已安装的应用
+    - uninstall: 卸载应用
+    - search: 搜索应用
+- channel: 配置安装Scala应用的来源渠道
+- launch, bootstrap: Scala应用启动器
+    - launch: 按名称启动应用, 或者直接从一个或多个Maven依赖启动
+    - bootstrap: 从一个或多个Maven依赖创建二进制启动器
+- java, java-home: 管理安装的JVM
+    - java: 管理JVM
+    - java-home: 输出JVM的主目录
+- fetch, resolve: 直接操作Maven依赖
+    - fetch: 拉取一个或多个Maven依赖
+    - resolve: 输出一个或多个Maven依赖的传递依赖
+- complete-dep: 补全Maven坐标
 
 ## setup
 
@@ -122,3 +143,6 @@ Welcome to the Ammonite Repl 3.0.3 (Scala 3.7.3 Java 17.0.9)
 ## fetch
 
 ## complete-dep
+
+# See Also
+* [coursier/jvm-index](https://github.com/coursier/jvm-index): JVM index generator

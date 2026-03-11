@@ -5,7 +5,7 @@
 * [Scala 3 — Book - Building and Testing Scala Projects with sbt](https://docs.scala-lang.org/scala3/book/tools-sbt.html)
 * [Scala 3 Migration Guide - Porting an sbt Project (by hand)](https://docs.scala-lang.org/scala3/guides/migration/tutorial-sbt.html)
 
-> sbt: A simple build tool
+> sbt is a build tool for Scala, Java, and more. It requires Java 1.8 or later.
 
 Features of sbt 
 * Little or no configuration required for simple projects
